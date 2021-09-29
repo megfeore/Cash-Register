@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading; //allows the use of Thread.Sleep() 
+using System.Media; //allows the use of SoundPlayer();
 
 namespace Cash_Register
 {
@@ -37,11 +38,10 @@ namespace Cash_Register
         public Form1()
         {
             InitializeComponent();
-
-        }
-
-        private void subtotalLabel_Click(object sender, EventArgs e)
-        {
+            //making the buttons enabled
+            //calculateChangeButton.Enabled = false;
+            receiptButton.Enabled = false;
+            newOrderButton.Enabled = false;
 
         }
 
@@ -74,37 +74,132 @@ namespace Cash_Register
             //making the buttons enabled
             calculateChangeButton.Enabled = true;
             receiptButton.Enabled = false;
+            newOrderButton.Enabled = false;
 
         }
 
         private void calculateChangeButton_Click(object sender, EventArgs e)
         {
-            //input into tendered text box
-            tendered = Convert.ToInt32(tenderedTextBox.Text);
-            //calculate change 
-            change = tendered - totalCost;
-            //show change
-            changeLabel2.Text = change.ToString("C");
-
-            //making the receipt button enabled
-            receiptButton.Enabled = true;
+            try
+            {
+                //input into tendered text box
+                tendered = Convert.ToInt32(tenderedTextBox.Text);
+                //calculate change 
+                change = tendered - totalCost;
+                //show change
+                changeLabel2.Text = change.ToString("C");
+                receiptButton.Enabled = true;
+            }
+            catch
+            {
+                blackLabel2.Text = "Please give a whole number for your change!";
+                receiptButton.Enabled = false;
+            }
+            //making the button enabled
+            newOrderButton.Enabled = false;
 
         }
 
         private void receiptButton_Click(object sender, EventArgs e)
         {
-            //printing the receipt 
-            printingLabel.Text = $"Meg's Icecream Shop";
+            //create a sound player and load the alert.wav sound, then play it 
+            SoundPlayer soundPlayer = new SoundPlayer(Properties.Resources.PrintingSound);
+
+            soundPlayer.Play();
+
+            //printing the receipt title
+            printingLabel.Text = $"Meg's Icecream Parlour";
             printingLabel.Refresh();
             Thread.Sleep(1000);
-            
+
+            //cone price total printing
+            printingLabel2.Text += $"Cones x{coneNumber}";
+            double coneTotal = conePrice * coneNumber;
+            printingLabel3.Text += $"{coneTotal.ToString("C")}";
+            Refresh();
+            Thread.Sleep(1000);
+
+            //milkshake total printing
+            printingLabel2.Text += $"\nMilkshakes x{milkshakeNumber}";
+            double milkshakeTotal = milkshakePrice * milkshakeNumber;
+            printingLabel3.Text += $"\n{milkshakeTotal.ToString("C")}";
+            Refresh();
+            Thread.Sleep(1000);
+
+            //sundae total printing
+            printingLabel2.Text += $"\nSundaes x{sundaeNumber}";
+            double sundaeTotal = sundaePrice * sundaeNumber;
+            printingLabel3.Text += $"\n{sundaeTotal.ToString("C")}";
+            Refresh();
+            Thread.Sleep(1000);
+
+            //subtotalPrinting
+            printingLabel2.Text += $"\n\nSubtotal";
+            printingLabel3.Text += $"\n\n{subtotal.ToString("C")}";
+            Refresh();
+            Thread.Sleep(1000);
+
+            //taxPrinting
+            printingLabel2.Text += $"\nTax";
+            printingLabel3.Text += $"\n{taxAmount.ToString("C")}";
+            Refresh();
+            Thread.Sleep(1000);
+
+            //totalPrinting
+            printingLabel2.Text += $"\nTotal";
+            printingLabel3.Text += $"\n{totalCost.ToString("C")}";
+            Refresh();
+            Thread.Sleep(1000);
+
+            //tenderedPrinting
+            printingLabel2.Text += $"\n\nTendered";
+            printingLabel3.Text += $"\n\n{tendered.ToString("C")}";
+            Refresh();
+            Thread.Sleep(1000);
+
+            //changePrinting
+            printingLabel2.Text += $"\nChange";
+            printingLabel3.Text += $"\n{change.ToString("C")}";
+            Refresh();
+            Thread.Sleep(1000);
+
+            //final receipt message printing
+            printingLabel4.Text = $"Thank you for supporting us!";
+            printingLabel4.Refresh();
+            Thread.Sleep(1000);
+           
+            //new order button appears
+            newOrderButton.Enabled = true;
+
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void newOrderButton_Click(object sender, EventArgs e)
         {
+            //resetting the numbers to zero
+            coneTextBox.Text = "0";
+            milkshakeTextBox.Text = "0";
+            sundaeTextBox.Text = "0";
+            tenderedTextBox.Text = "0";
+
+
+            //resetting the labels
+            totalsLabel.Text = "";
+            changeLabel2.Text = "";
+            printingLabel.Text = "";
+            printingLabel2.Text = "";
+            printingLabel3.Text = "";
+            printingLabel4.Text = "";
+            blackLabel2.Text = "";
+
             //making the buttons enabled
             calculateChangeButton.Enabled = false;
-            receiptButton.Enabled = false;  
+            receiptButton.Enabled = false;
+            newOrderButton.Enabled = false;
         }
+
+       
     }
-}
+
+
+       
+    }
