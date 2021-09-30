@@ -39,7 +39,7 @@ namespace Cash_Register
         {
             InitializeComponent();
             //making the buttons enabled
-            //calculateChangeButton.Enabled = false;
+            calculateChangeButton.Enabled = false;
             receiptButton.Enabled = false;
             newOrderButton.Enabled = false;
 
@@ -92,7 +92,7 @@ namespace Cash_Register
             }
             catch
             {
-                blackLabel2.Text = "Please give a whole number for your change!";
+                blackLabel2.Text = "Please enter a 2 digit number for your change!";
                 receiptButton.Enabled = false;
             }
             //making the button enabled
