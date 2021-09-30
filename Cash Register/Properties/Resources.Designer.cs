@@ -63,9 +63,39 @@ namespace Cash_Register.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2 {
+            get {
+                object obj = ResourceManager.GetObject("2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Icecream_Photo {
             get {
                 object obj = ResourceManager.GetObject("Icecream Photo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap llll {
+            get {
+                object obj = ResourceManager.GetObject("llll", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap milkshake_clip_art_6 {
+            get {
+                object obj = ResourceManager.GetObject("milkshake-clip-art-6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -76,6 +106,16 @@ namespace Cash_Register.Properties {
         internal static System.IO.UnmanagedMemoryStream PrintingSound {
             get {
                 return ResourceManager.GetStream("PrintingSound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sundae {
+            get {
+                object obj = ResourceManager.GetObject("sundae", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

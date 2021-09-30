@@ -56,6 +56,17 @@ namespace Cash_Register
             this.blackLabel2 = new System.Windows.Forms.Label();
             this.titleLabel = new System.Windows.Forms.Label();
             this.titleLabel2 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.backgroundTitleLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // conesLabel
@@ -97,7 +108,7 @@ namespace Cash_Register
             // 
             // milkshakeTextBox
             // 
-            this.milkshakeTextBox.Location = new System.Drawing.Point(283, 150);
+            this.milkshakeTextBox.Location = new System.Drawing.Point(283, 147);
             this.milkshakeTextBox.Name = "milkshakeTextBox";
             this.milkshakeTextBox.Size = new System.Drawing.Size(100, 20);
             this.milkshakeTextBox.TabIndex = 4;
@@ -303,8 +314,9 @@ namespace Cash_Register
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
+            this.titleLabel.BackColor = System.Drawing.Color.White;
             this.titleLabel.Font = new System.Drawing.Font("Elephant", 26.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.Location = new System.Drawing.Point(21, 9);
+            this.titleLabel.Location = new System.Drawing.Point(25, 9);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(668, 45);
             this.titleLabel.TabIndex = 24;
@@ -313,12 +325,71 @@ namespace Cash_Register
             // titleLabel2
             // 
             this.titleLabel2.AutoSize = true;
+            this.titleLabel2.BackColor = System.Drawing.Color.White;
             this.titleLabel2.Font = new System.Drawing.Font("Elephant", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel2.Location = new System.Drawing.Point(175, 54);
+            this.titleLabel2.Location = new System.Drawing.Point(172, 54);
             this.titleLabel2.Name = "titleLabel2";
             this.titleLabel2.Size = new System.Drawing.Size(371, 31);
             this.titleLabel2.TabIndex = 25;
             this.titleLabel2.Text = "Please enter your order below";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Cash_Register.Properties.Resources.milkshake_clip_art_6;
+            this.pictureBox3.Location = new System.Drawing.Point(-23, -46);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox3.TabIndex = 28;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Cash_Register.Properties.Resources.sundae;
+            this.pictureBox2.Location = new System.Drawing.Point(289, 286);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(114, 114);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 27;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Cash_Register.Properties.Resources._2;
+            this.pictureBox1.Location = new System.Drawing.Point(377, 588);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(125, 134);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 26;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Cash_Register.Properties.Resources._2;
+            this.pictureBox4.Location = new System.Drawing.Point(498, 588);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(125, 134);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 29;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Cash_Register.Properties.Resources._2;
+            this.pictureBox5.Location = new System.Drawing.Point(611, 588);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(125, 134);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 30;
+            this.pictureBox5.TabStop = false;
+            // 
+            // backgroundTitleLabel
+            // 
+            this.backgroundTitleLabel.BackColor = System.Drawing.Color.White;
+            this.backgroundTitleLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.backgroundTitleLabel.Location = new System.Drawing.Point(10, 5);
+            this.backgroundTitleLabel.Name = "backgroundTitleLabel";
+            this.backgroundTitleLabel.Size = new System.Drawing.Size(693, 89);
+            this.backgroundTitleLabel.TabIndex = 31;
             // 
             // Form1
             // 
@@ -327,6 +398,11 @@ namespace Cash_Register
             this.BackColor = System.Drawing.Color.LightPink;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(715, 734);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.titleLabel2);
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.blackLabel2);
@@ -353,9 +429,15 @@ namespace Cash_Register
             this.Controls.Add(this.sundaeLabel);
             this.Controls.Add(this.milkshakeLabel);
             this.Controls.Add(this.conesLabel);
+            this.Controls.Add(this.backgroundTitleLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Meg\'s Icecream Parlour";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -389,6 +471,12 @@ namespace Cash_Register
         private System.Windows.Forms.Label blackLabel2;
         private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.Label titleLabel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label backgroundTitleLabel;
     }
 }
 

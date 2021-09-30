@@ -47,10 +47,45 @@ namespace Cash_Register
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
-            //input of the cone number
-            coneNumber = Convert.ToInt32(coneTextBox.Text);
-            milkshakeNumber = Convert.ToInt32(milkshakeTextBox.Text);
-            sundaeNumber = Convert.ToInt32(sundaeTextBox.Text);
+            try
+            {
+                //input of the cone number
+                coneNumber = Convert.ToInt32(coneTextBox.Text);
+                coneTextBox.BackColor = Color.White;
+            }
+            catch
+            {
+                coneTextBox.BackColor = Color.Silver;
+                coneTextBox.Text = "Insert #";
+                return;
+            }
+
+            try
+            {
+                //input of the milkshake number
+                milkshakeNumber = Convert.ToInt32(milkshakeTextBox.Text);
+                milkshakeTextBox.BackColor = Color.White;
+            }
+            catch
+            {
+                milkshakeTextBox.BackColor = Color.Silver;
+                milkshakeTextBox.Text = "Insert #";
+                return;
+            }
+
+            try
+            {
+                //input of the sundae number
+                sundaeNumber = Convert.ToInt32(sundaeTextBox.Text);
+                sundaeTextBox.BackColor = Color.White;
+            }
+            catch
+            {
+                sundaeTextBox.BackColor = Color.Silver;
+                sundaeTextBox.Text = "Insert #";
+                return;
+            }
+
 
             //calculate price 
             subtotal = conePrice * coneNumber + milkshakePrice * milkshakeNumber
@@ -89,6 +124,7 @@ namespace Cash_Register
                 //show change
                 changeLabel2.Text = change.ToString("C");
                 receiptButton.Enabled = true;
+                blackLabel2.Text = "";
             }
             catch
             {
@@ -167,7 +203,7 @@ namespace Cash_Register
             printingLabel4.Text = $"Thank you for supporting us!";
             printingLabel4.Refresh();
             Thread.Sleep(1000);
-           
+
             //new order button appears
             newOrderButton.Enabled = true;
 
@@ -197,9 +233,9 @@ namespace Cash_Register
             newOrderButton.Enabled = false;
         }
 
-       
+        
     }
 
 
-       
-    }
+
+}
