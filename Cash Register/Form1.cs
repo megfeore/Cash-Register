@@ -233,7 +233,7 @@ namespace Cash_Register
             newOrderButton.Enabled = false;
         }
 
-        
+
     }
 
 

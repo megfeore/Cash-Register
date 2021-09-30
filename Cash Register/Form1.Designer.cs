@@ -123,7 +123,7 @@ namespace Cash_Register
             // calculateButton
             // 
             this.calculateButton.BackColor = System.Drawing.Color.LavenderBlush;
-            this.calculateButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Indigo;
+            this.calculateButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
             this.calculateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.calculateButton.Font = new System.Drawing.Font("Elephant", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calculateButton.ForeColor = System.Drawing.Color.Black;
@@ -178,7 +178,7 @@ namespace Cash_Register
             // 
             this.calculateChangeButton.BackColor = System.Drawing.Color.LavenderBlush;
             this.calculateChangeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.calculateChangeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Indigo;
+            this.calculateChangeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
             this.calculateChangeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.calculateChangeButton.Font = new System.Drawing.Font("Elephant", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calculateChangeButton.ForeColor = System.Drawing.Color.Black;
@@ -192,7 +192,7 @@ namespace Cash_Register
             // 
             // blackLabel
             // 
-            this.blackLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.blackLabel.BackColor = System.Drawing.Color.LavenderBlush;
             this.blackLabel.Location = new System.Drawing.Point(25, 422);
             this.blackLabel.Name = "blackLabel";
             this.blackLabel.Size = new System.Drawing.Size(346, 15);
@@ -235,7 +235,7 @@ namespace Cash_Register
             // receiptButton
             // 
             this.receiptButton.BackColor = System.Drawing.Color.LavenderBlush;
-            this.receiptButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Indigo;
+            this.receiptButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
             this.receiptButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.receiptButton.Font = new System.Drawing.Font("Elephant", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.receiptButton.Location = new System.Drawing.Point(91, 674);
@@ -279,7 +279,7 @@ namespace Cash_Register
             // newOrderButton
             // 
             this.newOrderButton.BackColor = System.Drawing.Color.LavenderBlush;
-            this.newOrderButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Indigo;
+            this.newOrderButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
             this.newOrderButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.newOrderButton.Font = new System.Drawing.Font("Elephant", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newOrderButton.Location = new System.Drawing.Point(450, 526);
@@ -302,9 +302,9 @@ namespace Cash_Register
             // 
             // blackLabel2
             // 
-            this.blackLabel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.blackLabel2.BackColor = System.Drawing.Color.LavenderBlush;
             this.blackLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.blackLabel2.ForeColor = System.Drawing.Color.White;
+            this.blackLabel2.ForeColor = System.Drawing.Color.Black;
             this.blackLabel2.Location = new System.Drawing.Point(25, 568);
             this.blackLabel2.Name = "blackLabel2";
             this.blackLabel2.Size = new System.Drawing.Size(346, 43);
@@ -315,7 +315,7 @@ namespace Cash_Register
             // 
             this.titleLabel.AutoSize = true;
             this.titleLabel.BackColor = System.Drawing.Color.White;
-            this.titleLabel.Font = new System.Drawing.Font("Elephant", 26.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.Font = new System.Drawing.Font("Elephant", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.Location = new System.Drawing.Point(25, 9);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(668, 45);
@@ -326,12 +326,12 @@ namespace Cash_Register
             // 
             this.titleLabel2.AutoSize = true;
             this.titleLabel2.BackColor = System.Drawing.Color.White;
-            this.titleLabel2.Font = new System.Drawing.Font("Elephant", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel2.Location = new System.Drawing.Point(172, 54);
+            this.titleLabel2.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel2.Location = new System.Drawing.Point(151, 54);
             this.titleLabel2.Name = "titleLabel2";
-            this.titleLabel2.Size = new System.Drawing.Size(371, 31);
+            this.titleLabel2.Size = new System.Drawing.Size(402, 28);
             this.titleLabel2.TabIndex = 25;
-            this.titleLabel2.Text = "Please enter your order below";
+            this.titleLabel2.Text = "Please enter your order below:";
             // 
             // pictureBox3
             // 
@@ -386,9 +386,9 @@ namespace Cash_Register
             // 
             this.backgroundTitleLabel.BackColor = System.Drawing.Color.White;
             this.backgroundTitleLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.backgroundTitleLabel.Location = new System.Drawing.Point(10, 5);
+            this.backgroundTitleLabel.Location = new System.Drawing.Point(10, 2);
             this.backgroundTitleLabel.Name = "backgroundTitleLabel";
-            this.backgroundTitleLabel.Size = new System.Drawing.Size(693, 89);
+            this.backgroundTitleLabel.Size = new System.Drawing.Size(693, 93);
             this.backgroundTitleLabel.TabIndex = 31;
             // 
             // Form1
