@@ -250,7 +250,7 @@ namespace Cash_Register
             // 
             this.printingLabel.BackColor = System.Drawing.Color.White;
             this.printingLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.printingLabel.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printingLabel.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.printingLabel.Location = new System.Drawing.Point(409, 106);
             this.printingLabel.Name = "printingLabel";
             this.printingLabel.Size = new System.Drawing.Size(284, 398);
@@ -263,7 +263,7 @@ namespace Cash_Register
             this.printingLabel2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.printingLabel2.Location = new System.Drawing.Point(419, 176);
             this.printingLabel2.Name = "printingLabel2";
-            this.printingLabel2.Size = new System.Drawing.Size(134, 318);
+            this.printingLabel2.Size = new System.Drawing.Size(172, 318);
             this.printingLabel2.TabIndex = 19;
             // 
             // printingLabel3
@@ -293,8 +293,8 @@ namespace Cash_Register
             // printingLabel4
             // 
             this.printingLabel4.BackColor = System.Drawing.Color.White;
-            this.printingLabel4.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printingLabel4.Location = new System.Drawing.Point(423, 402);
+            this.printingLabel4.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printingLabel4.Location = new System.Drawing.Point(423, 393);
             this.printingLabel4.Name = "printingLabel4";
             this.printingLabel4.Size = new System.Drawing.Size(259, 92);
             this.printingLabel4.TabIndex = 22;
